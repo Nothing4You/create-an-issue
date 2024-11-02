@@ -1,0 +1,9 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  extends: ["config:recommended", ":disableDependencyDashboard"],
+  prHourlyLimit: 0,
+  separateMinorPatch: true,
+  stabilityDays: 3,
+  pinDigests: true,
+  schedule: ["* * * * 6"],
+}
