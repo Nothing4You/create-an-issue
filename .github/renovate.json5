@@ -6,4 +6,10 @@
   stabilityDays: 3,
   pinDigests: true,
   schedule: ["* * * * 6"],
+  packageRules: [
+    {
+      matchUpdateTypes: ["minor", "patch", "pin", "digest"],
+      automerge: true,
+    },
+  ],
 }
